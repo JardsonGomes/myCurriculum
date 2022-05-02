@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v6.1.1/js/all.js"
+      integrity="sha384-xBXmu0dk1bEoiwd71wOonQLyH+VpgR1XcDH3rtxrLww5ajNTuMvBdL5SOiFZnNdp"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Jardson Gomes Front-end</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img id="logo" src="images/background3.jpg" />
+      </div>
+      <ul>
+        <li>
+          <a target="_blank" href="https://github.com/JardsonGomes">Github </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://wa.me/5588999210598">Manda msg!</a>
+        </li>
+        <li>
+          <a target="_blank" href="mailto:jardsongomes@gmail.com">Email</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section class="container">
+        <div class="name">
+          <h1>Jardson Gomes</h1>
+          <h5>Front-end developer</h5>
+        </div>
+        <div onclick="displayAbout()" id="arrow">
+          <!-- <a
+            target="_blank"
+            href="https://www.linkedin.com/in/jardson-lima-gomes-88a905184/"
+          > -->
+          <i id="animation" class="fa-solid fa-caret-down"></i>
+          <!-- </a> -->
+        </div>
+        <div style="display: none" id="about">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas rem
+            magni magnam velit eveniet, vitae, odio et culpa molestias dolorum
+            saepe porro animi laudantium necessitatibus asperiores ea harum
+            error vero ullam maiores! Velit, soluta ducimus.<br /><br />
+
+            Para saber mais
+            <a
+              class="linkedin"
+              target="_blank"
+              href="https://www.linkedin.com/in/jardson-lima-gomes-88a905184/"
+              >linkedin</a
+            >
+          </p>
+        </div>
+        <div class="form">
+          <div>
+            <p>Deixe seu contato!</p>
+          </div>
+          <form action="">
+            <input type="text" placeholder="Seu email" />
+            <button>Vai!</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script>
+    function displayAbout() {
+      var arrow = document.getElementById("animation");
+      arrow.classList.toggle("rotate");
+
+      var display = document.getElementById("about");
+      display.classList.toggle("active");
+    }
+  </script>
+</html>
